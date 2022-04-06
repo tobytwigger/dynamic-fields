@@ -1,0 +1,68 @@
+{
+    "name": "tobytwigger/dynamic-fields",
+    "description": "Job status for Laravel",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "job",
+        "queue",
+        "config"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/tobytwigger/dynamic-fields",
+    "readme": "https://github.com/tobytwigger/dynamic-fields/blob/master/README.md",
+    "authors": [
+        {
+            "name": "Toby Twigger",
+            "email": "tobytwigger1@gmail.com",
+            "homepage": "https://github.com/tobytwigger"
+        }
+    ],
+    "support": {
+        "email": "tobytwigger1@gmail.com",
+        "issues":"https://github.com/tobytwigger/dynamic-fields/issues",
+        "docs":"https://tobytwigger.github.io/dynamic-fields/"
+    },
+    "funding": [
+        {
+            "type": "buymeacoffee",
+            "url": "https://www.buymeacoffee.com/settings"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^8.0|^9.0",
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "orchestra/testbench": "^6.2|^7.0",
+        "brianium/paratest": "^6.3"
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "DynamicFields\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DynamicFields\\Tests\\": "tests/",
+            "DynamicFields\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DynamicFields\\DynamicFieldsServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/paratest --colors --verbose --configuration phpunit.xml"
+    }
+}

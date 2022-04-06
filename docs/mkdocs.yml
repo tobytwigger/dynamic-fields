@@ -1,0 +1,29 @@
+site_name: Laravel Dynamic Fields
+site_url: https://tobytwigger.github.io/dynamic-fields
+repo_url: https://github.com/tobytwigger/dynamic-fields
+nav:
+    -   Home: 'overview.md'
+theme:
+    name: material
+    custom_dir: overrides
+    features:
+        - navigation.instant
+        - navigation.top
+    palette:
+        -   scheme: default
+            toggle:
+                icon: material/weather-night
+                name: Switch to dark mode
+        -   scheme: slate
+            toggle:
+                icon: material/weather-sunny
+                name: Switch to light mode
+
+plugins:
+    - search
+    #  - with-pdf
+    - git-authors
+markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
